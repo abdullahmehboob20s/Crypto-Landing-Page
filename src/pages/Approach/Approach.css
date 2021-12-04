@@ -1,0 +1,69 @@
+.approach-body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.approach-content {
+  display: flex;
+  width: 100%;
+  border-radius: 58px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.24);
+  gap: 2rem;
+}
+.approach-content-left {
+  flex: 1;
+  padding: 3rem;
+}
+.approach-content-right {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 58px;
+  padding: 3rem;
+}
+
+.approach-content-left-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .approach-content {
+    flex-direction: column;
+  }
+
+  .approach-content-left-content {
+    padding-left: 0rem;
+  }
+
+  .approach-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .mb-40px {
+    margin-bottom: 20px;
+  }
+  .mb-20px {
+    margin-bottom: 16px;
+  }
+  .approach-content-left {
+    padding: 2rem;
+  }
+  .approach-content-right {
+    padding: 2rem;
+  }
+
+  .approach-content-left {
+    gap: 1rem;
+    padding-bottom: 0;
+  }
+}

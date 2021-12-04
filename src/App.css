@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Red+Rose:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #1b1928;
+}
+
+:root {
+  --fs-98px: 98px;
+  --fs-34px: 34px;
+  --fs-24px: 24px;
+  --fs-20px: 20px;
+  --fs-10px: 10px;
+  --fs-14px: 14px;
+
+  --blue: rgba(28, 72, 118, 1);
+  --dark-blue: rgba(9, 25, 65, 1);
+  --btn-blue: rgba(49, 94, 251, 1);
+}
+
+/* FONT SIZES */
+.fs-98px {
+  font-size: var(--fs-98px);
+}
+.fs-34px {
+  font-size: var(--fs-34px);
+}
+.fs-24px {
+  font-size: var(--fs-24px);
+}
+.fs-20px {
+  font-size: var(--fs-20px);
+}
+.fs-10px {
+  font-size: var(--fs-10px);
+}
+.fs-14px {
+  font-size: var(--fs-14px);
+}
+
+/* COLORS */
+.white {
+  color: white;
+}
+.orange {
+  color: #e25b0f;
+}
+.bg-orange {
+  background-color: #e25b0f;
+}
+.bg-dark-purple {
+  background-color: #1b1928;
+}
+.blue {
+  color: rgba(28, 72, 118, 1);
+}
+.dark-blue {
+  color: rgba(9, 25, 65, 1);
+}
+.bg-btn-blue {
+  background-color: var(--btn-blue);
+}
+
+/* LINE HEIGHTS */
+.lh-92px {
+  line-height: 92px;
+}
+.lh-51px {
+  line-height: 51px;
+}
+
+/* font-weights */
+.weight-9 {
+  font-weight: 900;
+}
+.weight-8 {
+  font-weight: 800;
+}
+.weight-7 {
+  font-weight: 700;
+}
+.weight-6 {
+  font-weight: 600;
+}
+.weight-5 {
+  font-weight: 500;
+}
+.weight-4 {
+  font-weight: 400;
+}
+.weight-3 {
+  font-weight: 300;
+}
+
+/* margins */
+.mb-5px {
+  margin-bottom: 5px;
+}
+.mb-10px {
+  margin-bottom: 10px;
+}
+.mb-15px {
+  margin-bottom: 15px;
+}
+.mb-20px {
+  margin-bottom: 20px;
+}
+.mb-25px {
+  margin-bottom: clamp(5px, 1.7361111111111112vw, 25px);
+}
+.mb-30px {
+  margin-bottom: clamp(18px, 2.0833333333333335vw, 30px);
+}
+.mb-35px {
+  margin-bottom: 35px;
+}
+.mb-40px {
+  margin-bottom: 40px;
+}
+.mb-45px {
+  margin-bottom: 45px;
+}
+.mb-50px {
+  margin-bottom: clamp(20px, 3.4722222222222223vw, 50px);
+}
+.mb-55px {
+  margin-bottom: 55px;
+}
+.mb-60px {
+  margin-bottom: clamp(40px, 4.166666666666667vw, 60px);
+}
+.mb-70px {
+  margin-bottom: clamp(40px, 4.861111111111111vw, 70px);
+}
+.mb-75px {
+  margin-bottom: clamp(35px, 5.208333333333333vw, 75px);
+}
+.mb-80px {
+  margin-bottom: 80px;
+}
+.mb-100px {
+  margin-bottom: clamp(40px, 6.944444444444445vw, 100px);
+}
+.mb-150px {
+  margin-bottom: clamp(80px, 10.416666666666666vw, 150px);
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+/* paddings */
+.py-30px {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.py-50px {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.py-70px {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.py-100px {
+  padding-top: clamp(50px, 6.944444444444445vw, 100px);
+  padding-bottom: clamp(50px, 6.944444444444445vw, 100px);
+}
+.py-200px {
+  padding-top: clamp(50px, 13.88888888888889vw, 200px);
+  padding-bottom: clamp(50px, 13.88888888888889vw, 200px);
+}
+
+/*  */
+.wrapper {
+  padding: 0 80px;
+  padding-top: 88px;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/images/bg-lines.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.wrapper-body {
+  width: 100%;
+  min-height: 100vh;
+  background: url(./assets/images/wrapper-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 56px 80px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  position: relative;
+  border-radius: 40px;
+}
+
+.footer {
+  position: relative;
+  z-index: 10000;
+}
+
+.wrapper_content_body {
+  position: relative;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.w-fit-content {
+  width: fit-content;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    padding: 0 40px;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --fs-98px: 50px;
+    --fs-34px: 28px;
+    --fs-24px: 20px;
+    --fs-20px: 18px;
+  }
+
+  .lh-92px {
+    line-height: unset;
+  }
+  .lh-51px {
+    line-height: unset;
+  }
+  .wrapper-body {
+    min-height: fit-content;
+  }
+
+  .py-100px {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --fs-98px: 35px;
+    --fs-34px: 22px;
+    --fs-24px: 16px;
+    --fs-20px: 16px;
+  }
+}

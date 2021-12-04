@@ -1,0 +1,100 @@
+.home-content {
+  flex: 1;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.home-titles {
+  max-width: 589px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  gap: 37px;
+}
+
+.home-titles a {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 1.5rem 4rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.home-titles a svg {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.coins-img {
+  position: absolute;
+  top: 100px;
+  right: -200px;
+  width: 800px;
+}
+
+@media (max-width: 1300px) {
+  .coins-img {
+    position: absolute;
+    top: 100px;
+    right: -200px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-titles {
+    max-width: 323px;
+  }
+
+  .home-titles a {
+    padding: 1rem 1.5rem;
+  }
+
+  .coins-img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 760px) {
+  .home-titles {
+    gap: 18px;
+  }
+
+  .coins-img {
+    width: 300px;
+  }
+
+  .wrapper-body {
+    padding: 28px 43px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-titles {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .coins-img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 0 16px;
+    padding-top: 20px;
+  }
+
+  .wrapper-body {
+    padding: 22px 25px;
+  }
+}
