@@ -33,7 +33,7 @@
   padding: 1rem 2.5rem;
 }
 
-.market_brand_left textarea {
+.market_brand_left > div {
   background: rgba(255, 255, 255, 0.35);
   border-radius: 57px;
   padding: 2rem;

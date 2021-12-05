@@ -21,10 +21,9 @@ function MarketReport() {
           <div className={styles.market_brand}>
             <div className={styles.market_brand_left}>
               <p className="dark-blue mb-15px fs-20px weight-7">Market wrap </p>
-              <textarea
-                placeholder="“customizable text here”"
-                className="fs-20px blue weight-7"
-              ></textarea>
+              <div className="fs-20px blue weight-7">
+                “customizable text here”
+              </div>
             </div>
             <div className={styles.market_brand_right}>
               <p className="dark-blue mb-15px fs-20px weight-7">

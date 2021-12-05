@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CalendarHeader } from "./CalendarHeader";
 import { Day } from "./Day";
-import { NewEventModal } from "./NewEventModal";
-import { DeleteEventModal } from "./DeleteEventModal";
 import { useDate } from "./hooks/useDate";
 import "./style.css";
 

@@ -192,6 +192,10 @@ body {
   padding-top: 88px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 .wrapper::before {
@@ -208,7 +212,7 @@ body {
 
 .wrapper-body {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: url(./assets/images/wrapper-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;

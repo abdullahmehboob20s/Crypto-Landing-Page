@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <Link to="/">
-        <img src={BrandLogo} alt="" />
+        <img className="brand-logo" src={BrandLogo} alt="" />
       </Link>
 
       <div className="hamburger white" onClick={() => setopen(!open)}>

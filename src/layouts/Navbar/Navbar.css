@@ -113,3 +113,9 @@
     user-select: none;
   }
 }
+
+@media (max-width: 760px) {
+  .brand-logo {
+    width: 55px;
+  }
+}
