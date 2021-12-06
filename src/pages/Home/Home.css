@@ -4,6 +4,7 @@
   align-content: center;
   flex-direction: column;
   position: relative;
+  height: 100%;
 }
 
 .home-titles {
@@ -73,6 +74,7 @@
 
   .wrapper-body {
     padding: 28px 43px;
+    flex: 1;
   }
 }
 

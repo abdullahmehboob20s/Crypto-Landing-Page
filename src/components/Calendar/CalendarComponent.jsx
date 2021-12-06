@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { CalendarHeader } from "./CalendarHeader";
 import { Day } from "./Day";
 import { useDate } from "./hooks/useDate";
@@ -6,18 +6,7 @@ import "./style.css";
 
 const Calendar = () => {
   const [nav, setNav] = useState(0);
-
-  const [events, setEvents] = useState(
-    localStorage.getItem("events")
-      ? JSON.parse(localStorage.getItem("events"))
-      : []
-  );
-
-  useEffect(() => {
-    localStorage.setItem("events", JSON.stringify(events));
-  }, [events]);
-
-  const { days, dateDisplay } = useDate(events, nav);
+  const { days, dateDisplay } = useDate(nav);
 
   return (
     <>

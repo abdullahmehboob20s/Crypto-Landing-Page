@@ -211,6 +211,7 @@ body {
 }
 
 .wrapper-body {
+  flex: 1;
   width: 100%;
   /* min-height: 100vh; */
   background: url(./assets/images/wrapper-bg.png);
@@ -232,6 +233,9 @@ body {
 .wrapper_content_body {
   position: relative;
   z-index: 1000;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
