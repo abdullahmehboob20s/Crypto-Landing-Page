@@ -1,9 +1,7 @@
-// import Calendar from "components/Calendar/CalendarComponent";
 import Wrapper from "layouts/Wrapper/Wrapper";
 import React, { useState } from "react";
 import "./Contact.css";
 import Calendar from "react-calendar";
-// import "react-calendar/dist/Calendar.css";
 
 function Index() {
   const [value, onChange] = useState(new Date());
@@ -14,7 +12,6 @@ function Index() {
         <div className="contact-content ">
           <div className="contact-content-calendar">
             <Calendar onChange={onChange} value={value} />
-            {/* <Calendar /> */}
           </div>
           <div className="contact-content-right">
             <input
