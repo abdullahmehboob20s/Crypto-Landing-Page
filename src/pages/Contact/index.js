@@ -1,15 +1,20 @@
-import Calendar from "components/Calendar/CalendarComponent";
+// import Calendar from "components/Calendar/CalendarComponent";
 import Wrapper from "layouts/Wrapper/Wrapper";
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
+import Calendar from "react-calendar";
+// import "react-calendar/dist/Calendar.css";
 
-function index() {
+function Index() {
+  const [value, onChange] = useState(new Date());
+
   return (
     <Wrapper>
       <div className="contact-wrapper py-100px">
         <div className="contact-content ">
           <div className="contact-content-calendar">
-            <Calendar />
+            <Calendar onChange={onChange} value={value} />
+            {/* <Calendar /> */}
           </div>
           <div className="contact-content-right">
             <input
@@ -41,4 +46,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
