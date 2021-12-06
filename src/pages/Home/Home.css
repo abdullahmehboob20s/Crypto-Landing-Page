@@ -14,7 +14,7 @@
   justify-content: center;
   flex-direction: column;
   flex: 1;
-  gap: 37px;
+  gap: 20px;
 }
 
 .home-titles a {
@@ -35,9 +35,9 @@
 
 .coins-img {
   position: absolute;
-  top: 100px;
+  top: 90px;
   right: -200px;
-  width: 800px;
+  width: 550px;
 }
 
 @media (max-width: 1300px) {

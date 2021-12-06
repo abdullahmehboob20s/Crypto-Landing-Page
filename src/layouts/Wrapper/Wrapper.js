@@ -12,7 +12,7 @@ function Wrapper(props) {
 
   return (
     <div className="wrapper bg-dark-purple" ref={wrapperRef}>
-      <div className="wrapper-body mb-20px">
+      <div className="wrapper-body ">
         <Navbar />
 
         <div className="wrapper_content_body">{props.children}</div>

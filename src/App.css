@@ -21,7 +21,7 @@ body {
 }
 
 :root {
-  --fs-98px: 98px;
+  --fs-98px: 60px;
   --fs-34px: 34px;
   --fs-24px: 24px;
   --fs-20px: 20px;
@@ -190,11 +190,17 @@ body {
 .wrapper {
   padding: 0 80px;
   padding-top: 88px;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* border: 2px solid red; */
+
+  padding: 0 40px;
+  padding-top: 40px;
+
+  height: 100vh;
   /* border: 2px solid red; */
 }
 
@@ -211,18 +217,26 @@ body {
 }
 
 .wrapper-body {
-  flex: 1;
+  /* flex: 1 !important; */
+
   width: 100%;
   /* min-height: 100vh; */
+  max-width: 1200px;
+  margin: 0 auto;
   background: url(./assets/images/wrapper-bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 56px 80px;
   display: flex;
   flex-direction: column;
-  /* border: 2px solid red; */
   position: relative;
   border-radius: 40px;
+
+  /* padding: 56px 80px; */
+  padding: 20px 62px;
+  margin-bottom: 20px;
+  height: fit-content;
+
+  /* border: 2px solid red; */
 }
 
 .footer {
