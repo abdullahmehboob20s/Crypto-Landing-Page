@@ -1,17 +1,29 @@
+import { useRef } from "react";
+import "./Wrapper.css";
 import Footer from "layouts/Footer/Footer";
 import Navbar from "layouts/Navbar/Navbar";
 import React, { useEffect } from "react";
-import { useRef } from "react";
 
 function Wrapper(props) {
-  const wrapperRef = useRef();
+  const wrapperRef = useRef(null);
+  const { overflow = false } = props;
 
   useEffect(() => {
-    wrapperRef.current.style.minHeight = window.innerHeight + "px";
+    const handler = () => {
+      wrapperRef.current.style.minHeight = window?.innerHeight + "px";
+    };
+    window.addEventListener("resize", handler);
+
+    return () => {
+      window.removeEventListener("resize", handler);
+    };
   });
 
   return (
-    <div className="wrapper bg-dark-purple" ref={wrapperRef}>
+    <div
+      className={`wrapper bg-dark-purple ${overflow ? "overflow" : ""} `}
+      ref={wrapperRef}
+    >
       <div className="wrapper-body ">
         <Navbar />
 

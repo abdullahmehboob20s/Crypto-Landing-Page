@@ -7,8 +7,8 @@ import Wrapper from "layouts/Wrapper/Wrapper";
 
 function Home() {
   return (
-    <Wrapper>
-      <div className="home-content py-70px">
+    <Wrapper overflow={true}>
+      <div className="home-content ">
         <div className="home-titles">
           <p className="fs-98px white weight-7 ">Invest in Crypto Now!</p>
           <p className="fs-24px white weight-4 ">
