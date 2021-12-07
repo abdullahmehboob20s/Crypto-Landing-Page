@@ -10,7 +10,7 @@ import brandImg4 from "assets/images/brand-img-4.png";
 function MarketReport() {
   return (
     <Wrapper>
-      <div className={`py-100px ${styles.market_report_wrapper}`}>
+      <div className={`${styles.market_report_wrapper}`}>
         <div className={styles.market_report_content}>
           <p
             className={`fs-20px blue weight-7 mb-25px ${styles.market_report_title}`}

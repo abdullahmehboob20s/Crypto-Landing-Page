@@ -65,6 +65,17 @@
   flex-direction: column;
 }
 
+@media (max-height: 700px) {
+  .wrapper-body {
+    max-width: 1000px;
+    padding: 10px 40px;
+  }
+
+  .wrapper {
+    padding-top: 20px;
+  }
+}
+
 @media (max-width: 1100px) {
   .wrapper {
     padding: 0 40px;

@@ -14,13 +14,13 @@
 }
 .approach-content-left {
   flex: 1;
-  padding: 3rem;
+  padding: 2rem 3rem;
 }
 .approach-content-right {
   flex: 1;
   background: rgba(255, 255, 255, 0.35);
   border-radius: 58px;
-  padding: 3rem;
+  padding: 2rem 3rem;
 }
 
 .approach-content-left-content {
@@ -29,6 +29,15 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 1.5rem;
+}
+
+@media (max-height: 700px) {
+  .approach-content-left {
+    padding: 1rem 3rem;
+  }
+  .approach-content-right {
+    padding: 1rem 3rem;
+  }
 }
 
 @media (max-width: 1000px) {

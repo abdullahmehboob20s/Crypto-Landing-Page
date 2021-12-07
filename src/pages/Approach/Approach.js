@@ -5,7 +5,7 @@ import "./Approach.css";
 function Approach() {
   return (
     <Wrapper>
-      <div className="approach-body py-100px">
+      <div className="approach-body ">
         <div className="approach-content">
           <div className="approach-content-left">
             <p className="fs-20px white weight-7">
@@ -24,21 +24,21 @@ function Approach() {
             </div>
           </div>
           <div className="approach-content-right">
-            <p className="fs-20px white weight-7 mb-40px">Our toolskit:</p>
+            <p className="fs-20px white weight-7 mb-20px">Our toolskit:</p>
             <ul>
-              <li className="fs-20px white weight-7 mb-20px">
+              <li className="fs-20px white weight-7 mb-15px">
                 Quantitative models to understand macro-market conditions
               </li>
-              <li className="fs-20px white weight-7 mb-20px">
+              <li className="fs-20px white weight-7 mb-15px">
                 Fundamental Analysis of CryptoCurrency Projects(Tokenomics,
                 Value Proposition, Market Positioning, Development Activity,
                 Market Interest)
               </li>
-              <li className="fs-20px white weight-7 mb-20px">
+              <li className="fs-20px white weight-7 mb-15px">
                 DeFi trading strategies to earn interest on volatilie and
                 stablecoins(Money Markets, Liquidity Incentives)
               </li>
-              <li className="fs-20px white weight-7 mb-20px">
+              <li className="fs-20px white weight-7 mb-15px">
                 Delta neutral Strategies that take advanage of market
                 inefficiencies
               </li>

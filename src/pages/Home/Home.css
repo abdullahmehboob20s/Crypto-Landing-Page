@@ -41,6 +41,20 @@
   transform: translateY(50%);
 }
 
+@media (min-height: 800px) {
+  .coins-img {
+    bottom: 40%;
+    right: -200px;
+    width: 550px;
+    transform: translateY(50%);
+  }
+}
+@media (max-height: 600px) {
+  .coins-img {
+    width: 350px !important;
+  }
+}
+
 @media (max-width: 1300px) {
   .coins-img {
     right: -200px;

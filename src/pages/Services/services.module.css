@@ -51,6 +51,20 @@
   margin: 0 auto;
 }
 
+@media (max-height: 800px) {
+  .servicesCards {
+    padding: 22px 60px;
+  }
+
+  .service_card_title {
+    padding: 25px 0;
+  }
+
+  .service_card_body {
+    padding: 1rem 2rem;
+  }
+}
+
 @media (max-width: 1300px) {
   .servicesCards {
     padding: 30px 30px;

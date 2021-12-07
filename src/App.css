@@ -221,6 +221,22 @@ input {
   background-color: transparent;
 }
 
+@media (max-height: 800px) {
+  :root {
+    --fs-20px: 18px;
+  }
+}
+@media (max-height: 700px) {
+  :root {
+    --fs-20px: 16px;
+  }
+}
+@media (max-height: 600px) {
+  :root {
+    --fs-20px: 10px;
+  }
+}
+
 @media (max-width: 1100px) {
   .wrapper {
     padding: 0 40px;

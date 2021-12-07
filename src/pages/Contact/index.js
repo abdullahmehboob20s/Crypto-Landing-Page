@@ -8,7 +8,7 @@ function Index() {
 
   return (
     <Wrapper>
-      <div className="contact-wrapper py-100px">
+      <div className="contact-wrapper ">
         <div className="contact-content ">
           <div className="contact-content-calendar">
             <Calendar onChange={onChange} value={value} />

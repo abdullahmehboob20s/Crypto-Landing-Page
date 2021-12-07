@@ -5,7 +5,7 @@ import styles from "./services.module.css";
 function Services() {
   return (
     <Wrapper>
-      <div className={`py-100px ${styles.servicesWrapper}`}>
+      <div className={` ${styles.servicesWrapper}`}>
         <div className={styles.servicesCards}>
           <ServiceCard
             title="Portfolio Management"
