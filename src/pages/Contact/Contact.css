@@ -183,11 +183,13 @@
     display: grid !important;
     grid-template-columns: repeat(7, 40px);
     /* grid-auto-rows: 60px; */
+    justify-items: center;
+    justify-content: center;
   }
   .react-calendar__month-view__weekdays__weekday {
     color: white;
     text-align: center;
-    font-size: 17px;
+    font-size: 14px;
     min-width: 100%;
   }
 
