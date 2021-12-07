@@ -67,7 +67,7 @@
 
 @media (max-height: 700px) {
   .wrapper-body {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     padding: 10px 40px;
   }
 
